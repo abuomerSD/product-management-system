@@ -5,4 +5,3 @@ product:
 - id
 - name
 - price
-- image

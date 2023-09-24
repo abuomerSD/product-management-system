@@ -2,15 +2,20 @@ const express = require('express');
 const app = express();
 const productRouter = require('./routes/productRoute');
 const morgan = require('morgan');
+const bodyParser = require('body-parser');
 
 // using morgan logging
 app.use(morgan('dev'));
 
+// body parser
+app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 app.get('/', (req, res) => {
-    res.redirect('/products');
+    res.redirect('/api/products');
 });
 
-app.use('/products', productRouter);
+app.use('/api/products', productRouter);
 
 app.use((req,res) => {
     res.json({
