@@ -8,26 +8,26 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controllers.SystemController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SystemController">
     <stylesheets>
         <URL value="@/resources/style.css" />
     </stylesheets>
    <children>
-      <TextField layoutX="14.0" layoutY="33.0" prefHeight="27.0" prefWidth="271.0" promptText="Product Name" />
-      <TextField layoutX="14.0" layoutY="73.0" prefHeight="27.0" prefWidth="271.0" promptText="Product Price" />
-      <Button layoutX="14.0" layoutY="122.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" text="Add Product" />
-      <TableView layoutX="299.0" layoutY="14.0" prefHeight="507.0" prefWidth="696.0">
+      <TextField fx:id="txtNameAdd" layoutX="14.0" layoutY="33.0" prefHeight="27.0" prefWidth="271.0" promptText="Product Name" />
+      <TextField fx:id="txtPriceAdd" layoutX="14.0" layoutY="73.0" prefHeight="27.0" prefWidth="271.0" promptText="Product Price" />
+      <Button layoutX="14.0" layoutY="122.0" mnemonicParsing="false" onAction="#addProduct" prefHeight="42.0" prefWidth="95.0" text="Add Product" />
+      <TableView fx:id="tbProduct" layoutX="299.0" layoutY="14.0" prefHeight="507.0" prefWidth="696.0">
         <columns>
-          <TableColumn prefWidth="184.0" text="Product ID" />
-          <TableColumn prefWidth="300.0" text="Product Name" />
-            <TableColumn prefWidth="211.0" text="Product Price" />
+          <TableColumn fx:id="colID" prefWidth="184.0" text="Product ID" />
+          <TableColumn fx:id="colName" prefWidth="300.0" text="Product Name" />
+            <TableColumn fx:id="colPrice" prefWidth="211.0" text="Product Price" />
         </columns>
       </TableView>
-      <TextField layoutX="14.0" layoutY="196.0" prefHeight="27.0" prefWidth="271.0" promptText="Product ID" />
+      <TextField fx:id="txtIdUpdate" layoutX="14.0" layoutY="196.0" prefHeight="27.0" prefWidth="271.0" promptText="Product ID" />
       <Separator layoutX="13.0" layoutY="179.0" prefHeight="1.0" prefWidth="271.0" />
-      <TextField layoutX="14.0" layoutY="234.0" prefHeight="27.0" prefWidth="271.0" promptText="Product Name" />
-      <TextField layoutX="14.0" layoutY="274.0" prefHeight="27.0" prefWidth="271.0" promptText="Product Price" />
-      <Button layoutX="14.0" layoutY="324.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" text="Update" />
-      <Button layoutX="135.0" layoutY="324.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="95.0" text="Delete" />
+      <TextField fx:id="txtNameUpdate" layoutX="14.0" layoutY="234.0" prefHeight="27.0" prefWidth="271.0" promptText="Product Name" />
+      <TextField fx:id="txtPriceUpdate" layoutX="14.0" layoutY="274.0" prefHeight="27.0" prefWidth="271.0" promptText="Product Price" />
+      <Button layoutX="14.0" layoutY="324.0" mnemonicParsing="false" onAction="#updateProduct" prefHeight="42.0" prefWidth="95.0" text="Update" />
+      <Button layoutX="135.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="42.0" prefWidth="95.0" text="Delete" />
    </children>
 </AnchorPane>
