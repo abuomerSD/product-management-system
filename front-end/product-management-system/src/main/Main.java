@@ -16,17 +16,20 @@ import javafx.stage.Stage;
  * @author asdf
  */
 public class Main extends Application {
-    
-    public static void main(String [] args){
+
+    public static void main(String[] args) {
+        // Fix Arabic letters in JavaFX
+        System.setProperty("prism.lcdtext", "false");
+        System.setProperty("prism.text", "t2k");
         launch(args);
     }
 
     @Override
     public void start(Stage stage) throws Exception {
-       Parent root = FXMLLoader.load(getClass().getResource("/views/system.fxml"));
-       stage.setScene(new Scene(root));
-       stage.setTitle("Product Management System");
-       stage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("/views/system.fxml"));
+        stage.setScene(new Scene(root));
+        stage.setTitle("Product Management System");
+        stage.show();
     }
-    
+
 }
