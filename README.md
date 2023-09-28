@@ -1,7 +1,7 @@
 # Product Management System :
 
 this is a product management system using node js at backend and javafx at frontend
-[Watch Video](https://www.youtube.com/watch?v=Txf-walT6rQ)
+[Watch Video about this System](https://www.youtube.com/watch?v=Txf-walT6rQ)
 
 ## GUI :
 
