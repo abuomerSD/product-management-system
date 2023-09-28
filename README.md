@@ -29,7 +29,7 @@ this is a product management system using node js at backend and javafx at front
 - You Must Have Node js installed on your System
   you can Download it from here [NodeJs](https://nodejs.org/en/download)
 - You Must Have PostgresSql intalled
-  download it from here[PostgesSql](https://www.postgresql.org/download/)
+  download it from here [PostgesSql](https://www.postgresql.org/download/)
 - Create Database Called ("productDB")
 - clone the Repository
 - Create Table With the sql script on "/database/structure.sql"
