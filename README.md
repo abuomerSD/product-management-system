@@ -3,26 +3,26 @@
 this is a product management system using node js at backend and javafx at frontend
 [Watch Video about this System](https://www.youtube.com/watch?v=Txf-walT6rQ)
 
-## GUI :
+### GUI :
 
 - JavaFx
 
-## Backend :
+### Backend :
 
 - Javascript with ExpressJs Freamwork
 
-## Database :
+### Database :
 
 - PostgresSql
 
-## System Features
+### System Features
 
 - Add Product
 - Update Product Name and Price
 - Delete Product
 - The Id for each Product Generated Automaticlly
 
-## How to use This Software :
+### How to use This Software :
 
 - You Must Have Java installed on your System
   you can Download it from here [Java](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)
