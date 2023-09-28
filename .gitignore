@@ -2,3 +2,4 @@ node_modules
 /front-end/product-management-system/nbproject/private/
 /front-end/product-management-system/build/
 /front-end/product-management-system/dist/
+.DS_Store
